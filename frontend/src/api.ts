@@ -1,4 +1,6 @@
-const BASE = `${import.meta.env.VITE_API_URL ?? "http://localhost:8001"}/api`;
+// In production both services share one domain (Vercel rewrites /api/* to the backend
+// service), so BASE is relative. Locally, .env.local points VITE_API_URL at the standalone dev backend.
+const BASE = `${import.meta.env.VITE_API_URL ?? ""}/api`;
 
 let authToken: string | null = localStorage.getItem("sitepulse_token");
 
