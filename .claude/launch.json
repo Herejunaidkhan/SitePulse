@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "sitepulse-backend",
+      "runtimeExecutable": "C:\\Users\\Rayyan Tech\\Downloads\\SitePulse\\backend\\venv\\Scripts\\python.exe",
+      "runtimeArgs": ["-m", "uvicorn", "app.main:app", "--reload", "--port", "8001", "--app-dir", "C:\\Users\\Rayyan Tech\\Downloads\\SitePulse\\backend"],
+      "port": 8001
+    },
+    {
+      "name": "sitepulse-frontend",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": ["C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js", "--prefix", "C:\\Users\\Rayyan Tech\\Downloads\\SitePulse\\frontend", "run", "dev"],
+      "port": 5174
+    }
+  ]
+}
